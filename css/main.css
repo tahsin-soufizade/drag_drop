@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #eee, #ccc);
+}
+
+.container {
+    width: 78%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.drag-wrapper {
+    width: 100%;
+    background-color: #e9feff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    gap: 2rem;
+}
+
+.drag-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    font-family: sans-serif;
+    line-height: 200px;
+}
+
+
+/* js classes */
+
+.dragging {
+    opacity: .5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
