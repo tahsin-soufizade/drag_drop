@@ -1,3 +1,3 @@
 # Drag &amp; Drop Project
 
-<li>you can drag elements from there parent and drop them in another parent</li>
+You can drag elements from their parent and drop them in another one.
