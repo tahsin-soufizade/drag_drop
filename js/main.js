@@ -26,12 +26,12 @@ dragWrapper.forEach(parent => {
     });
 });
 
-function getDragAfterElement(parent, y) {
+function getDragAfterElement(parent, x) {
     const draggableElements = [...parent.querySelectorAll('.drag-item:not(.dragging)')];
 
     return draggableElements.reduce((closest, child) => {
         const box = child.getBoundingClientRect();
-        const offset = y - box.left - box.height / 2;
+        const offset = x - box.left - box.height / 2;
 
         if (offset < 0 && offset > closest.offset) {
             return { offset: offset, element: child }
